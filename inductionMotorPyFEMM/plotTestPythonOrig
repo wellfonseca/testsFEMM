@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+import numpy as np
+# lib scientific styles scienceplots in https://github.com/garrettj403/SciencePlots
+#import scienceplots  ### modify
+
+data = np.loadtxt(fname = 'resultsPyFemm.txt')
+print (data[:,0])
+print (data[:,7])
+
+#plt.style.use('science')             ## lib scientific styles scienceplots
+#plt.style.use(['science','ieee'])    ## lib scientific styles scienceplots
+
+plt.plot(data[:,0],abs(data[:,7]))
+plt.ylabel('Torque')
+plt.xlabel('frequência')
+plt.savefig('Torque_vs_Freq_.png')
+#plt.grid(color = 'green', linestyle = '--', linewidth = 0.1)
+plt.grid()
+plt.show()
+
