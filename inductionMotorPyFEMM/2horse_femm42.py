@@ -19,7 +19,7 @@ with open('resultsPyFemm.txt', 'w') as txt:
 
 	for k in range (0,13):  
 
-		freq = k/4
+		freq = k/4 ###
 
 	##	-- change the frequency to the desired one
 	##	-- for this particular iteration
